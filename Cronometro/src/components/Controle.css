@@ -1,0 +1,32 @@
+
+.botoes {
+    width: auto;
+    height: auto;
+    background-color: #454546;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    padding: 1em 2em;
+    margin: 2em 0;
+}
+.btn-iniciar {
+    background-color: greenyellow;
+}
+.btn-pausar {
+    background-color: aqua;
+}
+.btn-zerar {
+    background-color: #fc2f2f;
+}
+.btn-iniciar, .btn-pausar, .btn-zerar {
+    padding: 0.5em 1em;
+    gap: 10px;
+}
+.btn-iniciar:hover, .btn-pausar:hover, .btn-zerar:hover {
+    filter: brightness(1.3);
+    font-weight: bold;
+}
+button {
+    cursor: pointer;
+}

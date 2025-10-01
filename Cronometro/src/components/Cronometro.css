@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+}
+
+body {
+    background-color: #454546;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: #ff7f16;
+}
+.tela {
+    width: 65vw;
+    height: auto;
+    background: black;
+    border: 1px solid black;
+    box-shadow: 3px 5px 10px black;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
