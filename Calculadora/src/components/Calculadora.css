@@ -1,54 +1,116 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    margin: 0 auto;
+  width: 320px;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 15px;
+  background: transparent;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #303030;
+  box-shadow: 5px 5px 10px black;
 }
 
-.display,
 .display-calculo {
-    width: 100%;
-    min-height: 30px;
-    border: 1px solid black;
-    margin-bottom: 10px;
-    text-align: right;
-    padding: 5px;
-    overflow: auto;
-    word-break: break-all;
+  height: 25px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: right;
+  padding: 5px 10px;
 }
 
-.btn-AC {
-    width: 85%;
-    text-align: center;
-    margin-bottom: 2px;
+.display {
+  background: #2c2c2c;
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: right;
+  padding: 15px 10px;
+  border-radius: 8px;
+  overflow: hidden;
 }
+
 .botoes {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  gap: 10px;
 }
 
 .lado_esquerdo {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .lado_direito {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.btns {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 2px;
-    margin-right: 2px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.btns-auxiliares {
+  display: flex;
+  gap: 10px;
+}
+
+.numeros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.botoesInf {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+.btn-limpar {
+  flex: 1;
+  background: #f44336;
+  color: #fff;
+}
+
+.btn-aux {
+  flex: 1;
+  background: #757575;
+  color: #fff;
+}
+
+.btns-numeros {
+  background: #333;
+  color: #fff;
+}
+
+.btns-inf {
+  background: #333;
+  color: #fff;
+}
+
+.btn-resultado {
+  background: #4caf50;
+  color: #fff;
+}
+
+.btns-operadores {
+  background: #ff9800;
+  color: #fff;
+  flex: 1;
 }
