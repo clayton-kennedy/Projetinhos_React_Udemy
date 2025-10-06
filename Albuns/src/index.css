@@ -1,0 +1,79 @@
+* {
+  background-color: #454546;
+  color: white;
+
+  input {
+    background-color: white;
+    color: black;
+    outline: none;
+  }
+}
+.container {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.barra-pesquisa {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.barra-pesquisa input {
+  width: 300px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.barra-pesquisa button {
+  padding: 11px 20px;
+  cursor: pointer;
+  background-color: wheat;
+  color: black;
+}
+
+.barra-pesquisa select {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  border-radius: 8px;
+  cursor: pointer;
+  object-fit: cover;
+  box-shadow: 1px 3px 3px black;
+}
+
+.foto-ampliada-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.foto-ampliada-container {
+  width: 90%;
+  height: 90%;
+}
+
+.foto-ampliada-backdrop img {
+  max-width: 45%;
+  max-height: 100%;
+  border-radius: 8px;
+}
