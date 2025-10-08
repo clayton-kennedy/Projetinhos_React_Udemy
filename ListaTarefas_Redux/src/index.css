@@ -130,6 +130,7 @@ li {
   span {
     text-align: justify;
     padding: 5px 20px 5px 0;
+    cursor: pointer;
   }
   .btn-remover:hover {
     background-color: red;
@@ -155,4 +156,8 @@ input:focus {
     margin: 10px 5px;
     text-align: center;
   }
+}
+.line-through {
+  text-decoration: line-through;
+  color: #6e6e6e;
 }
